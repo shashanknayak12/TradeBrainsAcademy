@@ -68,3 +68,57 @@ body {
 	border-radius: 5px;
 	box-shadow: 1px 5px 15px 1px rgb(90, 90, 90);
 }
+
+/*My learning section*/
+
+.my-learning-section {
+	margin: 0rem 10rem;
+	color: #007a78;
+}
+.my-learning-header {
+	font-size: 1rem;
+	padding-bottom: 2rem;
+	font-weight: bold;
+}
+
+.my-learning-header h2 {
+	font-size: 2.2rem;
+	font-weight: bold;
+}
+.my-learning-header-desc {
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+.my-learning-card {
+	display: flex;
+	/* box-shadow: 1px 5px 15px 0.5px rgb(199, 199, 199); */
+}
+
+.my-learning-img {
+	width: 15rem;
+	height: 11rem;
+}
+
+.my-learning-card-desc {
+	text-align: left;
+	padding: 0 1rem;
+	width: 50%;
+}
+.my-learning-card-desc h5 {
+	font-weight: bold;
+}
+
+/*Course section*/
+
+.course-section {
+	text-align: center;
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 468px) {
+}
