@@ -403,6 +403,9 @@ footer {
 	.course-cards-sec {
 		display: block;
 	}
+	.course-arrow {
+		display: none;
+	}
 
 	/*footer*/
 	.footer-company-overview {
@@ -424,6 +427,10 @@ footer {
 
 @media (min-width: 360px) and (max-width: 767px) {
 	/*nav bar*/
+
+	.navbar-toggler:focus {
+		box-shadow: none;
+	}
 	.navbar-toggler-icon {
 		position: absolute;
 		top: 3rem;
@@ -529,6 +536,9 @@ footer {
 	.course-title span {
 		font-size: 1.5rem;
 	}
+	.course-arrow {
+		display: none;
+	}
 
 	.course-cards-sec {
 		text-align: -webkit-center;
@@ -537,6 +547,7 @@ footer {
 	.course-card {
 		width: 17rem;
 		height: 19rem;
+		margin: 0 0 2rem 0;
 	}
 	.card-img-top {
 		width: 17rem;
