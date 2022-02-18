@@ -72,7 +72,7 @@ body {
 /*My learning section*/
 
 .my-learning-section {
-	margin: 0rem 10rem;
+	margin: 0rem 10rem 5rem 10rem;
 	color: #007a78;
 }
 .my-learning-header {
@@ -114,7 +114,95 @@ body {
 /*Course section*/
 
 .course-section {
+	margin: 0 10rem 5rem 10rem;
+}
+
+.course-arrow {
+	position: relative;
+	font-size: 5rem;
+	color: rgb(156, 156, 156);
+}
+
+.arrow-left {
+	position: absolute;
+	top: 13.75rem;
+	left: -2rem;
+}
+.arrow-right {
+	position: absolute;
+	top: 13.75rem;
+	right: -2rem;
+}
+
+.course-title {
 	text-align: center;
+	color: #007a78;
+}
+.course-title p {
+	font-size: 1rem;
+	font-weight: bold;
+	margin-bottom: -1rem;
+}
+.course-title span {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.course-cards-sec {
+	padding: 2rem 0 0 0;
+	display: flex;
+	justify-content: space-around;
+}
+.course-card {
+	text-align: center;
+	width: 20rem;
+	height: 20rem;
+	border-radius: 5px;
+	box-shadow: 1px 6px 10px 1px rgb(201, 201, 201);
+}
+.card-img-top {
+	width: 20rem;
+	height: 11rem;
+}
+
+.course-card-body {
+	padding: 1rem;
+}
+.course-card-title {
+	text-align: left;
+	font-weight: bold;
+	color: #007a78;
+	font-size: 1rem;
+}
+
+.course-author {
+	display: flex;
+}
+.course-author img {
+	width: 2rem;
+	height: 2rem;
+}
+.course-author p {
+	padding: 0.25rem 0 0 1rem;
+	font-size: 0.9rem;
+}
+
+.course-price-rating {
+	display: flex;
+	justify-content: space-between;
+}
+
+.course-price span {
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: rgb(109, 109, 109);
+}
+.course-rating span {
+	color: rgb(204, 130, 33);
+	font-weight: 700;
+}
+.course-rating span i {
+	color: rgb(248, 161, 46);
 }
 
 @media (min-width: 768px) {
