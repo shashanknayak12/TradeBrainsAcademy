@@ -334,6 +334,16 @@ footer {
 
 /*Responsive*/
 @media (min-width: 768px) and (max-width: 1023px) {
+	/*nav bar*/
+
+	.mobilenav {
+		padding: 0rem 5rem;
+		background: #f8f9fa;
+	}
+	.mobilenav .user-icon {
+		width: 30%;
+		text-align: center;
+	}
 	/*home*/
 
 	.home-img {
@@ -413,7 +423,20 @@ footer {
 
 @media (min-width: 360px) and (max-width: 767px) {
 	/*nav bar*/
+	.navbar-toggler-icon {
+		position: absolute;
+		top: 3rem;
+		right: 2rem;
+	}
 
+	.mobilenav {
+		padding: 0rem 5rem;
+		background: #f8f9fa;
+	}
+	.mobilenav .user-icon {
+		width: 30%;
+		text-align: center;
+	}
 	/*home*/
 	.home-img {
 		height: 50vh;

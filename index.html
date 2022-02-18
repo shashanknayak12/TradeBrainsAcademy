@@ -24,7 +24,7 @@
                 </a>
             </div>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button onClick="togglemenu()" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
             </button>
             
@@ -32,15 +32,15 @@
                 <form>
                     <input class="form-control me-2" type="search" placeholder="Search" >
                 </form>
-                <ul class="navbar-nav ms-auto me-2 mb-2 mb-lg-0">
+                <ul class="navbar-nav  me-2 mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link nav-text" href="#">My Learning</a>
+                    <a class="nav-link nav-text" href="#mylearning">My Learning</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link nav-text" href="#">Explore</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link nav-text" href="#">Courses</a>
+                    <a class="nav-link nav-text" href="#courses">Courses</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link nav-text" href="#">Webinars</a>
@@ -49,7 +49,7 @@
                     <a class="nav-link nav-text" href="#">Blogs</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link nav-text" href="#">Contact</a>
+                    <a class="nav-link nav-text" href="#contact">Contact</a>
                   </li>
                   <li class="nav-item cart-icon">
                     <a class="nav-link nav-text " href="#">
@@ -63,8 +63,58 @@
                   </li>
                 </ul>
             </div>
+
+
+
+             <!-- responsive navbar -->
+     <div id="mobilenav"  class="mobilenav d-none">
+                
+        <ul class="navbar-nav ms-auto me-2 mb-2 mb-lg-0">
+            <li>
+                <form>
+                    <input class="form-control me-2" type="search" placeholder="Search" >
+                </form>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-text" href="#mylearning">My Learning</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-text" href="#">Explore</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-text" href="#courses">Courses</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-text" href="#">Webinars</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-text" href="#">Blogs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-text" href="#contact">Contact</a>
+            </li>
+            <div>
+                
+            </div>
+            <li class="nav-item cart-icon">
+                <a class="nav-link nav-text " href="#">
+                    <i class="fa fa-cart-plus"></i>
+                </a>
+            </li>
+            <li class="nav-item user-icon">
+                <a class="nav-link nav-text" href="#">
+                    <i class="fa fa-user"></i>
+                </a>
+            </li>
+          
+        </ul>
+    </div>
+
+
+           
         </div>
     </nav>
+    
 
     <!-- home section -->
 
@@ -138,7 +188,7 @@
 
     <!-- my Learning section -->
 
-    <div class="my-learning-section">
+    <div class="my-learning-section" id="mylearning">
         <div class="my-learning-header">
             <h2 >Welcome back Kritesh!</h2>
             <div class="my-learning-header-desc">
@@ -196,7 +246,7 @@
 
     <!-- course section -->
 
-    <div class="course-section">
+    <div class="course-section" id="courses">
         <div class="course-arrow">
             <p class="arrow-left"><i class="fa fa-angle-left"></i></p>
             <p class="arrow-right"><i class="fa fa-angle-right"></i></p>
@@ -288,7 +338,7 @@
 
     <!-- footer section -->
 
-    <footer>
+    <footer id="contact">
         <div class="footer-helpfull-links">
             <div class="footer-company-overview">
                 <img src="./img/logo.png"><br>
@@ -350,7 +400,13 @@
     </footer>
     
 
-   
+   <script type="text/javascript">
+       function togglemenu(){
+           var element=document.getElementById("mobilenav");
+           element.classList.toggle("d-none");
+       }
+
+   </script>
 
 </body>
 </html>
