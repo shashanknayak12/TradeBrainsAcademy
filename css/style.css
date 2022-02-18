@@ -1,8 +1,11 @@
 body {
-	font-family: sans-serif;
+	font-family: "Montserrat", sans-serif;
 }
 
 /*nav bar*/
+#mobile-navbar {
+	display: none;
+}
 .navbar {
 	position: fixed;
 	width: 100%;
@@ -28,6 +31,7 @@ body {
 }
 
 /*home section*/
+
 .home {
 	padding-top: 5rem;
 }
@@ -50,7 +54,7 @@ body {
 	position: absolute;
 	color: aliceblue;
 	top: 23rem;
-	left: 15rem;
+	left: 10rem;
 	width: 45%;
 }
 
@@ -106,7 +110,7 @@ body {
 	color: #007a78;
 }
 .card p {
-	width: 90%;
+	width: 95%;
 	padding-top: 1rem;
 	color: rgb(105, 105, 105);
 	font-size: 1rem;
@@ -255,6 +259,7 @@ body {
 
 /*footer section*/
 footer {
+	font-size: 0.85rem;
 	background-color: #d2efe8;
 	width: 100%;
 	padding: 4rem 5rem 1rem 3rem;
@@ -329,10 +334,8 @@ footer {
 
 /*Responsive*/
 @media (min-width: 768px) and (max-width: 1023px) {
-	.navbar {
-		width: 88.9%;
-	}
 	/*home*/
+
 	.home-img {
 		height: 50vh;
 	}
@@ -372,11 +375,11 @@ footer {
 		margin: 0rem 4rem 5rem 4rem;
 	}
 	.my-learning-card {
-		width: 50rem;
+		width: 44rem;
 	}
 	.my-learning-card-desc h5 {
 		width: 90%;
-		margin-top: 2.1rem;
+		margin-top: 1.5rem;
 	}
 	.my-learning-card-desc p {
 		width: 90%;
@@ -408,29 +411,30 @@ footer {
 	}
 }
 
-@media (min-width: 400px) and (max-width: 767px) {
+@media (min-width: 360px) and (max-width: 767px) {
 	/*nav bar*/
 
 	/*home*/
 	.home-img {
-		height: 35vh;
+		height: 50vh;
 	}
 	.home-description {
-		top: 16rem;
-		left: 4rem;
+		top: 18rem;
+		left: 2rem;
 		width: 74%;
 	}
 
 	.home h5 {
-		font-size: 0.75rem;
+		font-size: 0.55rem;
 	}
 
 	.home h2 {
-		font-size: 1rem;
+		font-size: 0.85rem;
 		padding: 0;
 	}
 	.home button {
-		padding: 0.4rem 1.3rem;
+		font-size: 0.65rem;
+		padding: 0.4rem 0.65rem;
 	}
 
 	/*card section*/
@@ -461,6 +465,7 @@ footer {
 		width: 37%;
 	}
 	.card p {
+		width: 66%;
 		font-size: 0.85rem;
 	}
 
@@ -478,18 +483,19 @@ footer {
 	}
 
 	.my-learning-img {
-		width: 10rem;
-		height: 8rem;
+		width: 8rem;
+		height: 6rem;
 	}
 	.my-learning-card-desc {
 		width: 100%;
 	}
 
 	.my-learning-card-desc h5 {
-		font-size: 0.85rem;
+		margin-top: 0.45rem;
+		font-size: 0.55rem;
 	}
 	.my-learning-card-desc p {
-		font-size: 0.5rem;
+		font-size: 0.45rem;
 	}
 
 	/*course section*/
@@ -506,7 +512,7 @@ footer {
 	}
 	.course-card {
 		width: 17rem;
-		height: 18rem;
+		height: 19rem;
 	}
 	.card-img-top {
 		width: 17rem;
@@ -542,12 +548,13 @@ footer {
 		width: auto;
 	}
 	.footer-company-overview img {
-		width: 40%;
+		width: 65%;
 	}
 	.footer-company-overview span {
 		font-size: 0.65rem;
 	}
 	.footer-company-overview p {
+		margin-bottom: 0.5rem;
 		font-size: 0.65rem;
 	}
 	.footer-company-overview .company-des {
