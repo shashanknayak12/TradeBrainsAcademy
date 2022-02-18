@@ -87,9 +87,10 @@ body {
 .circle2 {
 	position: absolute;
 	border: 0.5px solid #fff;
-	right: 6rem;
+	right: 2.3rem;
+	top: 4rem;
 	border-radius: 50%;
-	padding: 0.45rem;
+	padding: 0.65rem;
 	background-color: rgb(240, 240, 240);
 }
 
@@ -351,6 +352,21 @@ footer {
 		padding: 0;
 	}
 
+	.card p {
+		font-size: 0.9rem;
+		width: auto;
+	}
+
+	.card .circle1 {
+		right: 4.4rem;
+		top: 0.3rem;
+		padding: 0.35rem;
+	}
+	.card .circle2 {
+		right: 1rem;
+		top: 3rem;
+	}
+
 	/*my learing section*/
 	.my-learning-section {
 		margin: 0rem 4rem 5rem 4rem;
@@ -392,15 +408,15 @@ footer {
 	}
 }
 
-@media (min-width: 468px) and (max-width: 767px) {
+@media (min-width: 400px) and (max-width: 767px) {
 	/*nav bar*/
 
 	/*home*/
 	.home-img {
-		height: 50vh;
+		height: 35vh;
 	}
 	.home-description {
-		top: 13rem;
+		top: 16rem;
 		left: 4rem;
 		width: 74%;
 	}
@@ -428,6 +444,21 @@ footer {
 		padding: 2px;
 		margin: 1rem 0 0 0;
 		font-size: 1.35rem;
+	}
+
+	.card .circle1 {
+		right: 6rem;
+		top: 0.5rem;
+		padding: 0.3rem;
+	}
+	.card .circle2 {
+		right: 3rem;
+		top: 2rem;
+	}
+
+	.card-icon {
+		padding: 0.5rem;
+		width: 37%;
 	}
 	.card p {
 		font-size: 0.85rem;
